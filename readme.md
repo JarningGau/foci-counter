@@ -67,9 +67,14 @@ FociSegmentation 是一款基于Python的图形用户界面(GUI)应用程序，�
 # Installation
 
 ```shell
-conda create -n foci-counter -f conda_env.yaml
+conda create -n foci-counter python=3.11 --yes
+conda activate foci-counter
+conda install scikit-image=0.22.0 --yes
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip install scikit-learn==1.4.0
+pip install pandas==2.2.0
+pip install matplotlib==3.8.2
 ```
-
 
 
 # Run Apps

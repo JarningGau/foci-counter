@@ -1,4 +1,6 @@
-# foci-counter：foci统计工具集合
+# foci-counter：foci统计GUI工具集合
+
+
 
 ## NucleusSegmentation: 细胞核分割工具
 
@@ -29,6 +31,8 @@ NucleusSegmentation 是一个基于Python的GUI应用程序，专门用于细胞
 4. 点击“Segmentation”进行细胞核分割。
 5. 查看结果并保存分析数据。
 
+
+
 ## FociSegmentation: 细胞foci信号分割与统计工具
 
 FociSegmentation 是一款基于Python的图形用户界面(GUI)应用程序，专为生物图像分析设计。它利用了先进的图像处理算法，帮助用户识别和量化图像中的细胞焦点区域。
@@ -58,12 +62,23 @@ FociSegmentation 是一款基于Python的图形用户界面(GUI)应用程序，�
 4. 点击“Segmentation”进行焦点分割。
 5. 查看结果并保存分析数据和图像。
 
+
+
 # Installation
+
 ```shell
-conda create -n foci-counter -f conda_env.yaml
+conda create -n foci-counter python=3.11 --yes
+conda activate foci-counter
+conda install scikit-image=0.22.0 --yes
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip install scikit-learn==1.4.0
+pip install pandas==2.2.0
+pip install matplotlib==3.8.2
 ```
 
+
 # Run Apps
+
 ```python
 import AppNucleusSegmentation as app
 import tkinter as tk
