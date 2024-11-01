@@ -93,3 +93,9 @@ app = app.FociSegmentation(root)
 app.run()
 ```
 
+
+
+## Test Data
+
+
+链接: https://pan.baidu.com/s/11wEf4iPwv5Rt6e04bHtnAg 提取码: 3jpj 
